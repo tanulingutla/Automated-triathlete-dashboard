@@ -1,104 +1,98 @@
-Project Overview:
-The Automated Triathlete Performance Dashboard is an interactive Jupyter Notebook project designed to track, analyze, and visualize the training performance of a triathlete over time. It simulates weekly workout data for swimming, biking, and running, and provides insights through visualizations, summary metrics, and predictive analysis for upcoming workouts.
-This project demonstrates skills in data cleaning, analysis, visualization, and automation—aligned with industry-level data analyst responsibilities, such as dashboard building, trend monitoring, and performance insights.
+#  Automated Triathlete Performance Dashboard
 
-Features
+An interactive Jupyter Notebook project designed to track, analyze, and visualize triathlete training performance across swim, bike, and run activities. This dashboard simulates weekly workout data, generates predictive insights, and presents trends through dynamic visualizations — showcasing skills in data cleaning, analysis, automation, and dashboard development.
 
-Workout Tracking: Records daily swimming, biking, and running sessions including distance, duration, and calories burned.
+---
 
-Weekly Summary: Aggregates total weekly distance, duration, and calories per activity.
+##  Project Overview
 
-Data Visualization:
+This dashboard helps monitor and optimize triathlete training by:
+- Simulating weekly workouts
+- Aggregating performance metrics
+- Visualizing trends and KPIs
+- Predicting future performance
+- Automating data updates
 
-Weekly trends in distance per activity.
+It reflects industry-level data analyst responsibilities such as trend monitoring, dashboard building, and performance reporting.
 
-Predicted vs actual weekly averages.
+---
 
-KPIs such as total distance, duration, calories, and average pace.
+##  Features
 
-Predictive Insights: Estimates next week’s performance using historical averages.
+- **Workout Tracking**: Logs daily swim, bike, and run sessions with distance, duration, and calories.
+- **Weekly Summary**: Aggregates total weekly metrics per activity.
+- **Data Visualization**:
+  - Weekly distance trends
+  - Predicted vs actual performance
+  - KPIs: total distance, duration, calories, average pace
+- **Predictive Insights**: Forecasts next week’s performance using historical averages.
+- **Automated Data Simulation**: Adds new weekly data for continuous tracking.
+- **Portfolio-Ready**: Clean, reproducible notebook with modular code and documentation.
 
-Automated Data Simulation: Adds a new week of training data automatically for ongoing analysis.
+---
 
-Portfolio-Ready: Fully functional Jupyter Notebook with clean, reproducible code.
+##  Dataset Structure
 
-Dataset
+Simulated or CSV-based data (`triathlete_data.csv`) with the following columns:
 
-The dataset simulates a triathlete’s workouts with the following columns:
+| Column Name     | Description                              |
+|-----------------|------------------------------------------|
+| `date`          | Date of the activity                     |
+| `activity_type` | Type of activity: Swim, Bike, or Run     |
+| `distance_km`   | Distance covered (in kilometers)         |
+| `duration_min`  | Duration of the workout in minutes       |
+| `calories`      | Calories burned during the activity      |
 
-Column Name	Description
-date	Date of the activity
-activity_type	Type of activity: Swim, Bike, or Run
-distance_km	Distance covered (in kilometers)
-duration_min	Duration of the workout in minutes
-calories	Calories burned during the activity
+Data can be generated programmatically or loaded from file, and is updated weekly for ongoing analysis.
 
-The data can be generated programmatically or loaded from a CSV file (triathlete_data.csv).
+---
 
-Data can be automatically updated weekly for continuous monitoring.
+##  Technologies & Libraries
 
-echnologies & Libraries
+- **Python 3.9+**: Core programming language
+- **Pandas**: Data cleaning and aggregation
+- **NumPy**: Numeric computations and random simulation
+- **Plotly Express**: Interactive charts and visualizations
+- **Jupyter Notebook**: Code execution and documentation
 
-Python 3.9+: Programming language for data manipulation and logic.
+---
 
-Pandas: Data cleaning, aggregation, and analysis.
+##  Key Functions
 
-NumPy: Numeric computations and simulation of random data.
+- `weekly_summary(df)`: Aggregates weekly totals for each activity
+- `predict_next_week(df)`: Forecasts next week’s distances using historical data
+- `simulate_new_week(df)`: Adds a new week of simulated workouts
 
-Plotly Express: Interactive visualizations and charts.
+---
 
-Jupyter Notebook: Interactive environment for code, visualizations, and documentation.
+##  Visualizations
 
-Key Functions
-1. weekly_summary(df)
+- **Weekly Distance Trends**: Line chart per activity
+- **Activity KPIs**: Summary table of distance, duration, calories, pace
+- **Predicted vs Actual**: Bar chart comparison
+- **Automated Updates**: Dynamic chart reflecting new data additions
 
-Aggregates data on a weekly basis for each activity type, computing total distance, duration, and calories.
+---
 
-2. predict_next_week(df)
+##  Project Workflow
 
-Predicts next week’s distance for each activity based on historical averages and random variation.
+1. **Data Generation / Loading**: Create or import workout data
+2. **Data Cleaning & Preparation**: Validate types and handle missing values
+3. **Analysis**: Compute summaries and KPIs
+4. **Visualization**: Explore trends with Plotly
+5. **Prediction & Automation**: Forecast and simulate future workouts
+6. **Notebook Packaging**: Combine code, visuals, and documentation
 
-3. simulate_new_week(df)
+---
 
-Simulates a new week of workouts, automatically adding data to the dataset for ongoing analysis.
+##  Potential Extensions
 
-Visualizations
+- Integrate with **Streamlit** or **Dash** for web-based dashboards
+- Add heart rate, pace, or cadence metrics
+- Use machine learning for smarter predictions
+- Track performance goals and send alerts
+- Enable filtering by date range, activity type, or month
 
-Weekly Distance Trends: Line chart displaying weekly distance for each activity.
+---
 
-Activity KPIs: Summary table including total distance, duration, calories, and average pace.
-
-Predicted vs Actual: Bar chart comparing actual weekly average distances with predicted values.
-
-Automated Updates: Dynamic visualization showing the impact of newly simulated weekly data.
-
-Project Workflow
-
-Data Generation / Loading:
-Generate or load the triathlete dataset.
-
-Data Cleaning & Preparation:
-Ensure proper data types, handle missing values, and validate ranges.
-
-Analysis:
-Compute weekly summaries, total KPIs, and average metrics.
-
-Visualization:
-Create interactive charts using Plotly Express to explore trends and patterns.
-
-Prediction & Automation:
-Estimate next week’s performance and simulate new weeks of data.
-
-Portfolio-Ready Notebook:
-Combine code, visualizations, and documentation into a single, reproducible Jupyter Notebook.
-Potential Extensions
-
-Integrate with Streamlit or Dash to create an interactive web dashboard.
-
-Include heart rate, pace, or cadence data for deeper analysis.
-
-Implement machine learning models for more accurate next-week predictions.
-
-Add performance goal tracking and progress alerts.
-
-Enable filtering by month, activity, or custom date ranges.
+##  File Structure
