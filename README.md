@@ -1,6 +1,6 @@
 #  Automated Triathlete Performance Dashboard
 
-An interactive Jupyter Notebook project designed to track, analyze, and visualize triathlete training performance across swim, bike, and run activities. This dashboard simulates weekly workout data, generates predictive insights, and presents trends through dynamic visualizations — showcasing skills in data cleaning, analysis, automation, and dashboard development.
+An interactive Jupyter Notebook project designed to track, analyze, and visualize triathlete training performance across swim, bike, and run activities. This dashboard simulates weekly workout data, generates predictive insights, and presents trends through dynamic visualizations â€” showcasing skills in data cleaning, analysis, automation, and dashboard development.
 
 ---
 
@@ -25,7 +25,7 @@ It reflects industry-level data analyst responsibilities such as trend monitorin
   - Weekly distance trends
   - Predicted vs actual performance
   - KPIs: total distance, duration, calories, average pace
-- **Predictive Insights**: Forecasts next week’s performance using historical averages.
+- **Predictive Insights**: Forecasts next weekâ€™s performance using historical averages.
 - **Automated Data Simulation**: Adds new weekly data for continuous tracking.
 - **Portfolio-Ready**: Clean, reproducible notebook with modular code and documentation.
 
@@ -60,7 +60,7 @@ Data can be generated programmatically or loaded from file, and is updated weekl
 ##  Key Functions
 
 - `weekly_summary(df)`: Aggregates weekly totals for each activity
-- `predict_next_week(df)`: Forecasts next week’s distances using historical data
+- `predict_next_week(df)`: Forecasts next weekâ€™s distances using historical data
 - `simulate_new_week(df)`: Adds a new week of simulated workouts
 
 ---
@@ -95,4 +95,3 @@ Data can be generated programmatically or loaded from file, and is updated weekl
 
 ---
 
-##  File Structure
