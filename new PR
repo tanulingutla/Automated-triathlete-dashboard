@@ -1,0 +1,7 @@
+def sum_of_natural_numbers(n):
+    # Formula: n * (n + 1) / 2
+    return n * (n + 1) // 2
+
+# Example usage
+n = int(input("Enter a positive integer: "))
+print(f"Sum of first {n} natural numbers is {sum_of_natural_numbers(n)}")
