@@ -1,0 +1,30 @@
+# Intentionally broken Python code 🤯
+
+def factorial(n)
+    if n = 0:
+        return 1
+    else
+        return n * factorial(n-1)
+
+print("Factorial of 5 is: ", factorial(5)
+
+# File handling with mistakes
+file = open("data.txt", r)   # wrong mode
+file.write("Hello World")    # writing in read mode
+print(file.read())           # reading after writing without closing
+file.close
+
+# List operations with errors
+numbers = [1, 2, 3, 4, 5]
+print(numbers[10])   # Index out of range
+numbers.append      # forgot parentheses
+sum = 0
+for i in range(numbers)   # range expects int, not list
+    sum += i
+print("Sum is: " + sum)   # type error: str + int
+
+# Syntax chaos
+if True
+print("This will never run")
+else
+print("Broken indentation")
